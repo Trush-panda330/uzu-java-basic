@@ -11,7 +11,7 @@ package ex1_05_1;
   ④ 自分の願い事
   ⑤ 自分が既卒かどうか ※boolean型を使いましょう
 --------------------------------------------------------------------------------------*/
-class Main {
+class Ex1_05_1 {
     public static void main(String[] args) {
 
         int lifetimeEarningsInIt = 264_260_000;           //IT業界の生涯賃金

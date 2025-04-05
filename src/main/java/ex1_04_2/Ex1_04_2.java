@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 /*
 -----------<Ex1_04_2>-------
-勝手にやってみたくてやりました。Ex1_04_1のリファクタ版です。
+セクション6の問題の改訂版
+
+Ex1_04_1の改良版です。
 コマンドラインから数値を受け取るのはIntelliJだと実行環境変更するのが面倒くさいと思ったので
 標準入力で受け取る形でリファクタしてみました。
 完全に個人勉強用なのでコメントマシマシですが
 ----------------------------
 */
-class Main {
+class Ex1_04_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int userInput = 0;
@@ -46,7 +48,16 @@ class Main {
         }
         scanner.close();
 
-        //元々コメントアウトした部分のように書いてみたが
+        for (int i = 1; i <= 9; i++) {
+            StringBuilder resultRow = new StringBuilder();
+            for (int j = 1; j <= 9; j++) {
+                resultRow.append(i * j).append(" ");
+            }
+            if (showAll || i == userInput) {
+                System.out.println(resultRow);
+            }
+        }
+        //元々下記のように書いていたが
         //StringBuilderを使えとIntelliJに注意された。
         //Stringに + を使うたびインスタンスを生成するためメモリを無駄に使うかららしい。
 //        for (int i = 1; i <= 9; i++) {
@@ -59,15 +70,6 @@ class Main {
 //            }
 //        }
 //
-        for (int i = 1; i <= 9; i++) {
-            StringBuilder resultRow = new StringBuilder();
-            for (int j = 1; j <= 9; j++) {
-                resultRow.append(i * j).append(" ");
-            }
-            if (showAll || i == userInput) {
-                System.out.println(resultRow);
-            }
-        }
 
     }
 }
