@@ -1,0 +1,28 @@
+package Ex1_08_1;
+/*-< 演習：Ex1_08_1 >---------------------------------
+セクション９の演習問題１つ目。
+コメントの内容に従ってプログラムを作成してください。
+----------------------------------------------------*/
+class Ex1_08_1 {
+    public static void main (String[] args) {
+//
+//        /* (1) 以下の配列を準備してください。
+//         **     配列名    ：names
+//         **     保持する値：「taro」「takeshi」「hanako」「moco」「satoshi」
+//         */
+//
+//        /* (2) 以下のアンダーバーを埋め、
+//         **     names配列から「moco」の値を表示するプログラムに修正してください。
+//         */
+//        String printName = ______ ;         //(21行目)アンダーバーに適切な処理を埋めてください
+//        System.out.println( printName );    //(22行目)変更しないでください
+
+        String[] name = {"taro","takeshi","hanako","moco","satoshi"};
+        /*
+        こう書いても一緒。
+        String[] name = new String[]{"taro","takeshi","hanako","moco","satoshi"};
+        */
+        String printName = name[3];
+        System.out.println(printName);
+    }
+}
