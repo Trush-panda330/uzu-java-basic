@@ -22,6 +22,11 @@ public class Ex1_13_2 {
         final String MESSAGE_AB      = "あなたは天才肌な方ですね？";
         final String MESSAGE_DEFAULT = "数字の1～4で答えてください";
 
+        if(args.length == 0) {
+            System.out.println("血液型に対応する数値を" +
+                    "引数に指定して実行してください。");
+            return;
+        }
         int bloodType = Integer.parseInt(args[0]);
 
         switch(bloodType) {
