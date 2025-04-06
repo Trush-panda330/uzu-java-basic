@@ -30,11 +30,11 @@ class Ex1_12_1 {
         } else if (score >= 60 && score <= 79) {
             System.out.println("「普通です！」");
 
-        } else if (score == 100) {
-            System.out.println("「満点だったので宿題免除です！！」");
-
         } else {
             System.out.println("「優秀です！」");
+        }
+        if (score == 100) {
+            System.out.println("「満点だったので宿題免除です！！」");
         }
     }
 }
