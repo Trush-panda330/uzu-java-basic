@@ -24,17 +24,19 @@ class Ex1_12_1 {
         if (score < 0 || score > 100) {
             System.out.println("「不正な点数です！」");
 
-        } else if (score >= 0 && score <= 59) {
-            System.out.println("「赤点です！」");
-
-        } else if (score >= 60 && score <= 79) {
-            System.out.println("「普通です！」");
-
         } else {
-            System.out.println("「優秀です！」");
-        }
-        if (score == 100) {
-            System.out.println("「満点だったので宿題免除です！！」");
+            if (score <= 59) {
+                System.out.println("「赤点です！」");
+
+            } else if (score <= 79) {
+                System.out.println("「普通です！」");
+
+            } else {
+                System.out.println("「優秀です！」");
+            }
+            if (score == 100) {
+                System.out.println("「満点だったので宿題免除です！！」");
+            }
         }
     }
 }
